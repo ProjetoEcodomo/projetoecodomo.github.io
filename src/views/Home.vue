@@ -18,14 +18,12 @@
 }
 
 .vueperslide__title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 25px;
   color: #C7C7C7;
 }
 
 .vueperslide__content {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 50px;
@@ -33,7 +31,7 @@
 }
 
 .vueperslides__bullet{
-  margin: 0.8em 8.05px;
+  margin: 30px 5px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 720px) {
