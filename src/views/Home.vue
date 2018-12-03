@@ -1,7 +1,7 @@
 <template>
   <div class="slides">
     <vueper-slides :arrows="false" fade autoplay :touchable="false"
-    :slide-ratio="0.3" fixed-height="100vh">
+    :slide-ratio="0.3" fixed-height="100vh" speed="6000">
       <vueper-slide
       v-for="(slide, i) in slides"
       :key="i"
@@ -20,14 +20,14 @@
 .vueperslide__title {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 25px;
   color: #C7C7C7;
 }
 
 .vueperslide__content {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 50px;
   color: #C7C7C7;
 }
@@ -73,12 +73,12 @@ export default {
         {
           title: 'Você sabia?',
           content: 'Entre 1980 e 2005, a temperatura máxima no estado Pernambuco subiu 3 graus Celsius.',
-          image: 'https://lh4.googleusercontent.com/wO0lxyluCQ1T0-6vb9jwCJ9tD7P94zdmK2gImTUxsx3kXc8eiTgeQeQyb9APWZF1h1iuK8ocG1_gqHkc7WP1=w1366-h662-rw',
+          image: 'http://i66.tinypic.com/2lvlrgz.png',
         },
         {
           title: 'Você sabia?',
           content: 'O replantio de espécies nativas da Caatinha auxilia na manutenção do ciclo hidrológico local.',
-          image: 'https://lh5.googleusercontent.com/CcFVL7ydpXvnaIJV8iGh25Ii_ux7EyVzf-seg8D1IxO99AeJzGPuNEWgejTbZO6i2YodaLe8OjMAXWpmmpsA=w1366-h662-rw',
+          image: 'http://i63.tinypic.com/2ziuf10.png',
         },
       ],
     };
