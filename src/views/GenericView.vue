@@ -14,14 +14,19 @@ export default {
 };
 </script>
 
-<style>
-.container h1{
+<style scoped>
+.container h1 {
   margin: 50px 0px 8px 0px;
   color: #4B5C40;
 }
-.container p{
+
+.container p {
   margin: 0px 5px;
   text-align: justify;
   color: #606060;
+}
+
+hr {
+  margin-bottom: 30px;
 }
 </style>
