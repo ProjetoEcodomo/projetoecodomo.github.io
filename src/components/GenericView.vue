@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <h1>{{title}}</h1>
-    <hr>
-    <slot></slot>
+    <h1 class="title">{{title}}</h1>
+    <hr class="line">
+    <div class="slot">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -15,16 +17,34 @@ export default {
 </script>
 
 <style>
-.container h1{
+.title {
   margin: 50px 0px 8px 0px;
   color: #4B5C40;
 }
-.container p{
+.slot p {
   text-align: justify;
   color: #606060;
   font-size: 16px;
 }
-.container hr{
+.line {
   margin: 26px 0px;
+}
+@media screen and (max-width: 720px) {
+  .title {
+    margin: 50px 0px 3px 10px;
+  }
+  .slot img{
+    width: 250px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .slot img {
+    width: 650px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .slot img {
+    width: 900px;
+  }
 }
 </style>
