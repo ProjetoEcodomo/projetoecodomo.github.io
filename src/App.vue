@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper">
     <sidenav class="sidenav"/>
-    <!--main-->
     <div class="main-content">
       <div class="container-fluid">
         <router-view/>
@@ -34,7 +33,7 @@ export default {
   display: block;
 }
 
-.sidenav{
+.sidenav {
   width: 19%;
   transition: .2s;
   z-index: 2;
@@ -42,7 +41,7 @@ export default {
   overflow-x: hidden;
 }
 
-.main-content{
+.main-content {
   margin-left: 19%;
   transition: .2s;
 }

@@ -2,9 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import ListaDeCupulas from './views/ListaDeCupulas.vue';
-import Semiarido from './views/Semiarido.vue';
 import Manual from './views/Manual.vue';
 import Cupula from './views/Cupula.vue';
+import Semiarido from './views/Semiarido.vue';
 
 Vue.use(Router);
 

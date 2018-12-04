@@ -17,7 +17,7 @@ export default {
   color: #366A2A;
   background-color: white;
   text-align: center;
-  padding: 7px 25px;
+  padding: 7px 0;
   font-size: 16px;
   margin: 10px 15px 0px 0px;
   width: 150px;

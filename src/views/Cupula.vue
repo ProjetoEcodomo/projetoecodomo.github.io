@@ -1,6 +1,6 @@
 <template>
   <generic-view :title="cupulaInfo.name">
-    <cupula-dados></cupula-dados>
+    <cupula-dados :data="cupulaData"></cupula-dados>
   </generic-view>
 </template>
 

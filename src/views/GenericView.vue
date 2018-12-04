@@ -18,23 +18,35 @@ export default {
 
 <style scoped>
 .title {
-  margin: 50px 0px 8px 0px;
+  padding: 40px 20px 0;
   color: #4B5C40;
 }
+
 .slot p {
   text-align: justify;
   color: #606060;
   font-size: 16px;
 }
+
 .line {
-  margin: 26px 0px;
+  margin: 30px 15px 25px;
 }
+
 @media screen and (max-width: 720px) {
-  .title {
-    margin: 50px 0px 3px 10px;
+  .container {
+    padding: 0;
   }
-  .slot img{
+
+  .title {
+    padding: 43px 15px 0;
+  }
+
+  .slot img {
     width: 250px;
+  }
+
+  .line {
+    margin: 20px 15px 25px;
   }
 }
 @media screen and (min-width: 720px) and (max-width: 1024px) {
@@ -46,9 +58,5 @@ export default {
   .slot img {
     width: 900px;
   }
-}
-
-hr {
-  margin-bottom: 30px;
 }
 </style>

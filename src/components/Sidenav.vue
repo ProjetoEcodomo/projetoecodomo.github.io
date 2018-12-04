@@ -4,24 +4,36 @@
     <img src="@/assets/logo.png" class="logo"/>
     <hr>
     <div class="nav">
-      <router-link to="/"><img src="@/assets/home.png" class="icon">INÍCIO</router-link>
-      <router-link to='/cupulas'><img src="@/assets/reichstag-dome.png" class="icon">CÚPULAS</router-link>
-      <router-link to="/semiarido"><img src="@/assets/catus.png" class="icon">SEMIÁRIDO</router-link>
-      <a href="#"><img src="@/assets/info.png" class="icon">SOBRE</a>
-      <a href="#"><img src="@/assets/book.png" class="icon">MANUAL</a>
+      <router-link to="/">
+        <img src="@/assets/home.png" class="icon">
+          INÍCIO
+      </router-link>
+      <router-link to='/cupulas'>
+        <img src="@/assets/reichstag-dome.png" class="icon">
+          CÚPULAS
+      </router-link>
+      <router-link to="/semiarido">
+        <img src="@/assets/catus.png" class="icon">
+          SEMIÁRIDO
+      </router-link>
+      <router-link to="/">
+        <img src="@/assets/info.png" class="icon">SOBRE
+      </router-link>
+      <router-link to="/manual">
+        <img src="@/assets/book.png" class="icon">MANUAL
+      </router-link>
     </div>
   </div>
 </template>
 
 <style scoped>
-
-.sidenav{
+.sidenav {
   left: 0;
   position: fixed;
   height: 100%;
   background-color: #c5d8a3;
   transition: .5s;
-  padding: 2% 2% 2% 2%;
+  padding: 0 2% 2% 2%;
 }
 
 .small-logo {
@@ -32,17 +44,18 @@
 
 .logo {
   width: 90%;
+  display: block;
   margin: auto;
   transition: .5s;
 
 }
 
-.nav{
+.nav {
   display: block;
   margin-top: 40px;
 }
 
-.nav a{
+.nav a {
   display: block;
   color:#4b5c40;
   text-decoration: none;
@@ -59,28 +72,38 @@
   margin: 0% 10% 8% 2%;
 }
 
-.nav a:hover{
+.nav a:hover {
   color: black;
   transition: .5s;
 }
 
 @media screen and (max-width: 1005px) {
-  .nav a{font-size: 50%}
-  .nav {margin: 0%}
-  .icon {width: 20% }
+  .nav a { font-size: 50% }
+  .nav { margin: 0% }
+  .icon { width: 20% }
+  .sidenav { padding: 4% 2% 2% 2%; }
 }
 
 @media screen and (max-width: 498px) {
-  .nav {margin-top: 0}
-  .nav a{font-size: 0;
-        margin: 10%}
-  .logo {width: 0;
-        float: left;}
-  .small-logo {width: 100%}
-  .icon {width: 100%;
-        margin: 50% 0% 0% 0%}
-  .nav a:hover{opacity: 0.6}
+  .nav { margin-top: 0 }
 
+  .nav a {
+    font-size: 0;
+    margin: 10%;
+  }
+
+  .logo {
+    width: 0;
+    float: left;
+  }
+
+  .small-logo { width: 100% }
+
+  .icon {
+    width: 100%;
+    margin: 50% 0% 0% 0%;
+  }
+
+  .nav a:hover { opacity: 0.6 }
 }
-
 </style>

@@ -20,12 +20,14 @@ export default {
 
 <style scoped>
 .card {
+  font-family: 'Roboto';
   margin: 10px;
   color: #707070;
 }
 
 .content {
   float: right;
+  margin: 0 10px;
 }
 
 .card-title {
@@ -37,11 +39,12 @@ export default {
 .card-value {
   margin: 0;
   font-weight: 900;
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .img {
-  width: 100px;
+  margin-top: 8px;
+  width: 75px;
   float: left;
 }
 </style>

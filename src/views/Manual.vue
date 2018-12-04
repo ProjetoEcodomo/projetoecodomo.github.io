@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import GenericView from '@/components/GenericView.vue';
+import GenericView from '@/views/GenericView.vue';
 import Button from '@/components/Button.vue';
 
 export default {

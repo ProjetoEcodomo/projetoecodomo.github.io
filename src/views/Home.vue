@@ -18,13 +18,15 @@
 }
 
 .vueperslide__title {
+  font-family: 'Roboto';
   font-weight: 100;
   font-size: 25px;
   color: #C7C7C7;
 }
 
 .vueperslide__content {
-  font-weight: 500;
+  font-family: 'Roboto';
+  font-weight: 600;
   font-size: 40px;
   line-height: 50px;
   color: #C7C7C7;

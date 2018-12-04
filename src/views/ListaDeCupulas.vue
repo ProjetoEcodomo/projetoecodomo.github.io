@@ -1,13 +1,15 @@
 <template>
   <generic-view title="Cúpulas">
-    <p class="label">Recife</p>
-    <b-card-group deck>
-      <div v-for="(cupula, index) in cupulas" :key="index">
-        <router-link :to="`/cupulas/${cupula.cupula_id}`">
-          <cupula-item :name="cupula.name" :img="cupula.img"></cupula-item>
-        </router-link>
-      </div>
-    </b-card-group>
+    <div class="container">
+      <p class="label">Recife</p>
+      <b-card-group deck>
+        <div v-for="(cupula, index) in cupulas" :key="index">
+          <router-link :to="`/cupulas/${cupula.cupula_id}`">
+            <cupula-item :name="cupula.name" :img="cupula.img"></cupula-item>
+          </router-link>
+        </div>
+      </b-card-group>
+    </div>
   </generic-view>
 </template>
 
@@ -51,13 +53,13 @@ export default {
   text-align: left;
   text-transform: uppercase;
   color: #4B5C40;
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
   .label {
-    text-align: center;
+    text-align: center !important;
   }
 }
 </style>
