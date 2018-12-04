@@ -1,20 +1,24 @@
 <template>
-  <div class="container">
+  <generic-view title="Cúpulas">
     <p class="label">Recife</p>
     <b-card-group deck>
       <div v-for="(cupula, index) in cupulas" :key="index">
-        <cupula-item :name="cupula.name" :img="cupula.img"></cupula-item>
+        <router-link :to="`/cupulas/${cupula.cupula_id}`">
+          <cupula-item :name="cupula.name" :img="cupula.img"></cupula-item>
+        </router-link>
       </div>
     </b-card-group>
-  </div>
+  </generic-view>
 </template>
 
 <script>
+import GenericView from '@/views/GenericView.vue';
 import CupulaItem from '@/components/CupulaItem.vue';
 
 export default {
   components: {
     CupulaItem,
+    GenericView,
   },
   data() {
     return {
