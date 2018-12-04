@@ -1,8 +1,35 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="wrapper">
+    <sidenav class="sidenav"/>
+    <!--main-->
+    <div class="main-content">
+      <div class="container-fluid">
+        <router-view/>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+
+import Sidenav from './components/Sidenav.vue';
+
+export default {
+  name: 'app',
+  components: {
+    Sidenav,
+  },
+  methods: {
+    openNav: function (event) {
+      document.getElementsByClassName('sidenav').style.width = '10%';
+    },
+    closeNav() {
+
+    },
+  },
+};
+</script>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -12,5 +39,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #5E6C54;
+  display: block;
 }
+
+.sidenav{
+  width: 19%;
+  transition: .5s;
+  z-index: 2;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.main-content{
+  margin-left: 19%;
+  transition: .2s;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .sidenav{width: 15%}
+  .main-content{margin-left: 15%}
+}
+
 </style>
