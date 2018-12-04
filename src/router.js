@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import ListaDeCupulas from './views/ListaDeCupulas.vue';
 import Manual from './views/Manual.vue';
+import Sobre from './views/Sobre.vue';
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/manual',
       name: 'manual',
       component: Manual,
+    },
+    {
+      path: '/sobre',
+      name: 'sobre',
+      component: Sobre,
     },
   ],
 });
