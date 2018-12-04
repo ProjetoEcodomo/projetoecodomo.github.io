@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h1>{{title}}</h1>
+    <h1 class="title">{{title}}</h1>
     <hr>
-    <slot></slot>
+    <slot class="slot"></slot>
   </div>
 </template>
 
@@ -14,14 +14,19 @@ export default {
 };
 </script>
 
-<style>
-.container h1{
+<style scoped>
+.title {
   margin: 50px 0px 8px 0px;
   color: #4B5C40;
 }
-.container p{
+
+.slot {
   margin: 0px 5px;
   text-align: justify;
   color: #606060;
+}
+
+hr {
+  margin-bottom: 30px;
 }
 </style>
