@@ -60,7 +60,8 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
-
+  .sidenav{width: 15%}
+  .main-content{margin-left: 15%}
 }
 
 </style>

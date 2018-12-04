@@ -4,6 +4,9 @@
     <div class="nav">
       <router-link to="/"><img src="@/assets/home.png" class="icon">HOME</router-link>
       <router-link to='/cupulas'><img src="@/assets/reichstag-dome.png" class="icon">CÚPULAS</router-link>
+      <router-link to="/semiarido"><img src="@/assets/catus.png" class="icon">SEMIÁRIDO</router-link>
+      <a href="#"><img src="@/assets/info.png" class="icon">SOBRE</a>
+      <a href="#"><img src="@/assets/book.png" class="icon">MANUAL</a>
     </div>
   </div>
 </template>
@@ -42,24 +45,28 @@
 
 .icon {
   width: 20%;
-  padding: 0 2px 5px 2px;
+  padding: 2px 2px 5px 2px;
   transition: .5s;
 }
 
 .nav a:hover{
-  background-color: whitesmoke;
-  color: grey;
+  /*background-color: whitesmoke;*/
+  color: black;
   transition: .5s;
+  /*border-radius: 10px 10px 10px 10px;*/
+
 }
 
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 491px) {
   .sidenav{width: 10%}
   .nav a{font-size: 0}
   .icon {width: 100%}
-}
-@media screen and (max-width: 710) {
+  .nav a:hover{background-color: #E6FFDE;
+              border-radius: 5px;}
 
+}
+@media screen and (max-width: 584) {
 }
 
 </style>
