@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card {
   width: 240px;
   overflow: hidden;

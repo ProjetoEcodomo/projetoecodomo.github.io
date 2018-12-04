@@ -1,20 +1,26 @@
 <template>
-  <div class="container">
-    <p class="label">Recife</p>
-    <b-card-group deck>
-      <div v-for="(cupula, index) in cupulas" :key="index">
-        <cupula-item :name="cupula.name" :img="cupula.img"></cupula-item>
-      </div>
-    </b-card-group>
-  </div>
+  <generic-view title="Cúpulas">
+    <div class="container">
+      <p class="label">Recife</p>
+      <b-card-group deck>
+        <div v-for="(cupula, index) in cupulas" :key="index">
+          <router-link :to="`/cupulas/${cupula.cupula_id}`">
+            <cupula-item :name="cupula.name" :img="cupula.img"></cupula-item>
+          </router-link>
+        </div>
+      </b-card-group>
+    </div>
+  </generic-view>
 </template>
 
 <script>
+import GenericView from '@/views/GenericView.vue';
 import CupulaItem from '@/components/CupulaItem.vue';
 
 export default {
   components: {
     CupulaItem,
+    GenericView,
   },
   data() {
     return {
@@ -47,13 +53,13 @@ export default {
   text-align: left;
   text-transform: uppercase;
   color: #4B5C40;
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
   .label {
-    text-align: center;
+    text-align: center !important;
   }
 }
 </style>

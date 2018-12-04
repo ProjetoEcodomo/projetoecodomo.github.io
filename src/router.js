@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import ListaDeCupulas from './views/ListaDeCupulas.vue';
 import Manual from './views/Manual.vue';
+import Cupula from './views/Cupula.vue';
+import Semiarido from './views/Semiarido.vue';
 import Sobre from './views/Sobre.vue';
 
 Vue.use(Router);
@@ -20,6 +22,16 @@ export default new Router({
       path: '/cupulas',
       name: 'cupulas',
       component: ListaDeCupulas,
+    },
+    {
+      path: '/cupulas/:id',
+      name: 'cupula',
+      component: Cupula,
+    },
+    {
+      path: '/semiarido',
+      name: 'semiarido',
+      component: Semiarido,
     },
     {
       path: '/manual',

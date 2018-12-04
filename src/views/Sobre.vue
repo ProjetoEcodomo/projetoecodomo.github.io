@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import GenericView from '@/components/GenericView.vue';
+import GenericView from '@/views/GenericView.vue';
 
 export default {
   components: {
