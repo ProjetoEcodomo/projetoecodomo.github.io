@@ -20,8 +20,11 @@ export default {
   color: #4B5C40;
 }
 .container p{
-  margin: 0px 5px;
   text-align: justify;
   color: #606060;
+  font-size: 16px;
+}
+.container hr{
+  margin: 26px 0px;
 }
 </style>
