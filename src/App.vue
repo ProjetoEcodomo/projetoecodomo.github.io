@@ -43,7 +43,7 @@ export default {
 }
 
 .sidenav{
-  width: 20%;
+  width: 19%;
   transition: .5s;
   z-index: 2;
   position: fixed;
@@ -51,8 +51,8 @@ export default {
 }
 
 .main-content{
-  margin-left: 20%;
-  padding: 0%;
+  margin-left: 19%;
+  transition: .2s;
 }
 
 .container-fluid {
