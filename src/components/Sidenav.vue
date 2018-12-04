@@ -4,7 +4,7 @@
     <img src="@/assets/logo.png" class="logo"/>
     <hr>
     <div class="nav">
-      <router-link to="/"><img src="@/assets/home.png" class="icon">HOME</router-link>
+      <router-link to="/"><img src="@/assets/home.png" class="icon">INÍCIO</router-link>
       <router-link to='/cupulas'><img src="@/assets/reichstag-dome.png" class="icon">CÚPULAS</router-link>
       <router-link to="/semiarido"><img src="@/assets/catus.png" class="icon">SEMIÁRIDO</router-link>
       <a href="#"><img src="@/assets/info.png" class="icon">SOBRE</a>
@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .sidenav{
   left: 0;
@@ -31,15 +31,15 @@
 }
 
 .logo {
-  width: 100%;
-  padding: 10px 5px 10% 10px;
+  width: 90%;
+  margin: auto;
   transition: .5s;
 
 }
 
 .nav{
   display: block;
-  padding-top: 0;
+  margin-top: 40px;
 }
 
 .nav a{
@@ -49,39 +49,36 @@
   font-size: 90%;
   text-align: left;
   transition: .5s;
-  margin: 2% 0 0 2%;
+  margin: 10% 0 0 10%;
 
 }
 
 .icon {
-  width: 30%;
+  width: 45px;
   transition: .5s;
-  margin: 2% 10% 2% 2%;
+  margin: 0% 10% 8% 2%;
 }
 
 .nav a:hover{
-  /*background-color: whitesmoke;*/
   color: black;
   transition: .5s;
-  /*border-radius: 10px 10px 10px 10px;*/
-
 }
 
-@media screen and (max-width: 938px) {
-  .nav a{font-size: 60%}
-  .nav {display: flex}
+@media screen and (max-width: 1005px) {
+  .nav a{font-size: 50%}
+  .nav {margin: 0%}
   .icon {width: 20% }
 }
 
 @media screen and (max-width: 498px) {
-  .sidenav{width: 10%}
+  .nav {margin-top: 0}
   .nav a{font-size: 0;
         margin: 10%}
   .logo {width: 0;
         float: left;}
   .small-logo {width: 100%}
   .icon {width: 100%;
-        margin: 0%}
+        margin: 50% 0% 0% 0%}
   .nav a:hover{opacity: 0.6}
 
 }

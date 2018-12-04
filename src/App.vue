@@ -19,14 +19,6 @@ export default {
   components: {
     Sidenav,
   },
-  methods: {
-    openNav: function (event) {
-      document.getElementsByClassName('sidenav').style.width = '10%';
-    },
-    closeNav() {
-
-    },
-  },
 };
 </script>
 
@@ -44,7 +36,7 @@ export default {
 
 .sidenav{
   width: 19%;
-  transition: .5s;
+  transition: .2s;
   z-index: 2;
   position: fixed;
   overflow-x: hidden;
