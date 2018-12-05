@@ -83,7 +83,7 @@ export default {
   font-size: 20px;
 }
 .content{
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 .photo {
   margin-bottom: 20px;
