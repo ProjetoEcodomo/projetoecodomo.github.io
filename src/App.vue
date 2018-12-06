@@ -46,10 +46,6 @@ export default {
   transition: .2s;
 }
 
-.container-fluid {
-  padding: 0;
-}
-
 @media screen and (max-width: 480px) {
   .sidenav{width: 15%}
   .main-content{margin-left: 15%}

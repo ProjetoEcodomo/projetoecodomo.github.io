@@ -1,7 +1,9 @@
 <template>
   <div class="sidenav">
-    <img src="@/assets/small-icon.png" class="small-logo">
-    <img src="@/assets/logo.png" class="logo"/>
+    <router-link to="/">
+      <img src="@/assets/small-icon.png" class="small-logo">
+      <img src="@/assets/logo.png" class="logo"/>
+    </router-link>
     <hr>
     <div class="nav">
       <router-link to="/">
@@ -104,6 +106,7 @@
     margin: 50% 0% 0% 0%;
   }
 
-  .nav a:hover { opacity: 0.6 }
+  .nav a:hover,
+  .nav a:active { opacity: 0.3 }
 }
 </style>

@@ -18,11 +18,11 @@ export default {
   background-color: white;
   text-align: center;
   padding: 7px 0;
-  font-size: 16px;
+  font-size: 0.9em;
   margin: 10px 15px 0px 0px;
-  width: 150px;
+  width: 120px;
 }
-.button:hover{
+.button:hover {
   background-color: #366A2A;
   color: white;
   cursor: pointer;

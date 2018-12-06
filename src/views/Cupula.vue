@@ -6,13 +6,13 @@
       </router-link>
       <Button label="SOBRE"/>
     </div>
-    <cupula-dados :data="cupulaData"></cupula-dados>
+    <cupula-dados></cupula-dados>
   </generic-view>
 </template>
 
 <script>
 import GenericView from '@/views/GenericView.vue';
-import CupulaDados from '@/views/CupulaDados.vue';
+import CupulaDados from '@/components/CupulaDataset.vue';
 import Button from '@/components/Button.vue';
 
 
@@ -21,7 +21,6 @@ export default {
     return {
       cupulaId: '',
       cupulaInfo: {},
-      cupulaData: {},
     };
   },
   components: {
@@ -32,8 +31,7 @@ export default {
   created() {
     const loader = this.$loading.show();
     this.cupulaId = this.$route.params.id;
-    this.getInfo();
-    this.getData()
+    this.getInfo()
       .then(() => {
         loader.hide();
       })
@@ -43,15 +41,9 @@ export default {
   },
   methods: {
     getInfo() {
-      this.$http.get(`/cupulas/${this.cupulaId}`)
+      return this.$http.get(`/cupulas/${this.cupulaId}`)
         .then((data) => {
           this.cupulaInfo = data.data;
-        }).catch(err => err);
-    },
-    getData() {
-      return this.$http.get(`/cupulas/${this.cupulaId}/data`)
-        .then((data) => {
-          this.cupulaData = data.data;
         }).catch(err => err);
     },
   },
@@ -73,7 +65,7 @@ export default {
 @media screen and (min-width: 320px) and (max-width: 800px) {
   .buttons {
     position: unset;
-    margin: 0 60px 33px;
+    margin: 10px 15px 25px;
   }
 }
 </style>

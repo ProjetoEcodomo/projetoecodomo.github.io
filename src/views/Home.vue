@@ -13,6 +13,10 @@
 </template>
 
 <style>
+.container-fluid {
+  padding: 0;
+}
+
 .vueperslide__content-wrapper {
   width: 60%;
 }
