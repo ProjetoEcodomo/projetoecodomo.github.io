@@ -15,29 +15,31 @@
 
     <p class="label">Solo</p>
     <b-card-group deck class="cards">
-      <card title="Temperatura"
-            :value="`${data.temperature_soil}°C`"
-            img="https://i.ibb.co/TPWT3zK/thermometer.png"/>
+      <card title="Temperatura" :value="`${data.temperature_soil}°C`" img="https://i.ibb.co/TPWT3zK/thermometer.png"/>
       <card title="Umidade"
             :value="`${data.humidity_soil}%`"
             img="https://i.ibb.co/N1mYZY1/humidity.png"/>
     </b-card-group>
+    <charts v-if="requestDone" :data="data"/>
   </div>
 </template>
 
 <script>
 import Card from '@/components/CupulaDataCard.vue';
+import Charts from '@/components/Charts.vue';
 
 export default {
   data() {
     return {
+      requestDone: false,
       data: {},
     };
   },
   components: {
     Card,
+    Charts,
   },
-  created() {
+  beforeMount() {
     const loader = this.$loading.show();
     this.cupulaId = this.$route.params.id;
     this.getData()
@@ -53,6 +55,7 @@ export default {
       return this.$http.get(`/cupulas/${this.cupulaId}/data`)
         .then((response) => {
           this.data = response.data;
+          this.requestDone = true;
         }).catch(err => err);
     },
   },

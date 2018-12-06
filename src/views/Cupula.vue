@@ -4,17 +4,17 @@
       <router-link :to="`/cupulas/${cupulaId}`">
         <Button class="dados" label="DADOS"/>
       </router-link>
-      <Button label="SOBRE"/>
+      <router-link :to="`/cupulas/${cupulaId}/sobre`">
+        <Button class="dados" label="SOBRE"/>
+      </router-link>
     </div>
-    <cupula-dados></cupula-dados>
+    <router-view/>
   </generic-view>
 </template>
 
 <script>
 import GenericView from '@/views/GenericView.vue';
-import CupulaDados from '@/components/CupulaDataset.vue';
 import Button from '@/components/Button.vue';
-
 
 export default {
   data() {
@@ -25,7 +25,6 @@ export default {
   },
   components: {
     GenericView,
-    CupulaDados,
     Button,
   },
   created() {
@@ -57,7 +56,7 @@ export default {
   right: 11px;
 }
 
-.router-link-active .dados {
+.router-link-exact-active .dados {
   background-color: #366A2A;
   color: white;
 }

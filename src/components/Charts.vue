@@ -1,7 +1,6 @@
 <template>
   <div id="chart">
-    <h1>Gráficos</h1>
-    <chart width="500" type="area" :options="options" :series="series"></chart>
+    <chart class="chart" type="area" :options="options" :series="series"></chart>
   </div>
 </template>
 ``
@@ -12,6 +11,7 @@ export default {
   components: {
     chart,
   },
+  props: ['data'],
   data() {
     return {
       options: {
@@ -62,5 +62,14 @@ export default {
       },
     };
   },
+  mounted() {
+  },
 };
 </script>
+
+<style scoped>
+.chart {
+  width: 80%;
+  margin: auto;
+}
+</style>

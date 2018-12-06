@@ -6,6 +6,8 @@ import Manual from './views/Manual.vue';
 import Cupula from './views/Cupula.vue';
 import Semiarido from './views/Semiarido.vue';
 import Sobre from './views/Sobre.vue';
+import CupulaDados from '@/views/CupulaDataset.vue';
+import CupulaAbout from '@/views/CupulaAbout.vue';
 
 Vue.use(Router);
 
@@ -25,8 +27,17 @@ export default new Router({
     },
     {
       path: '/cupulas/:id',
-      name: 'cupula',
       component: Cupula,
+      children: [
+        {
+          path: '',
+          component: CupulaDados,
+        },
+        {
+          path: 'sobre',
+          component: CupulaAbout,
+        },
+      ],
     },
     {
       path: '/semiarido',
