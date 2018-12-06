@@ -27,7 +27,7 @@ export default {
 
 .content {
   float: right;
-  margin: 0 10px;
+  margin: 0;
 }
 
 .card-title {
@@ -39,12 +39,34 @@ export default {
 .card-value {
   margin: 0;
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 1.8em;
 }
 
 .img {
-  margin-top: 8px;
-  width: 75px;
+  width: 60px;
   float: left;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .content {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .img {
+    width: 70px;
+    margin: auto;
+    display: block;
+  }
+
+  .card-value {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .card-value {
+    font-size: 1.9em;
+  }
 }
 </style>

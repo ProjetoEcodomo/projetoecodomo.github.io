@@ -3,20 +3,20 @@
     <p class="label">Ambiente</p>
     <b-card-group deck class="cards">
       <card title="Temperatura"
-            :value="`${data.temperature_env}ºC`"
+            :value="`${data.temperature_env}°C`"
             img="https://i.ibb.co/TPWT3zK/thermometer.png"/>
       <card title="Umidade"
             :value="`${data.humidity_env}%`"
             img="https://i.ibb.co/N1mYZY1/humidity.png"/>
       <card title="Luminosidade"
-            :value="`${data.luminosity_env}klm`"
+            :value="`${data.luminosity}lm`"
             img="https://i.ibb.co/LvVK5X6/luminosity.png"/>
     </b-card-group>
 
     <p class="label">Solo</p>
     <b-card-group deck class="cards">
       <card title="Temperatura"
-            :value="`${data.temperature_soil}ºC`"
+            :value="`${data.temperature_soil}°C`"
             img="https://i.ibb.co/TPWT3zK/thermometer.png"/>
       <card title="Umidade"
             :value="`${data.humidity_soil}%`"
