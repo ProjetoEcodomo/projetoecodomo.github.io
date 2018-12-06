@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h1 class="title">{{ title }}</h1>
-    <hr class="line">
+    <h1 class="title" v-if="title">{{ title }}</h1>
+    <hr class="line" v-if="title">
     <div class="slot">
       <slot></slot>
     </div>
