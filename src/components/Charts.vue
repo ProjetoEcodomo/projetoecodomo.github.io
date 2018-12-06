@@ -15,9 +15,6 @@ export default {
   data() {
     return {
       options: {
-        chart: {
-          id: 'vuechart',
-        },
         xaxis: {
           type: 'datetime',
           categories: ['2018-09-19T00:00:00', '2018-09-19T01:30:00', '2018-09-19T02:30:00',

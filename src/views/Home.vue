@@ -81,7 +81,7 @@ export default {
         },
         {
           title: 'Você sabia?',
-          content: 'O replantio de espécies nativas da Caatinha auxilia na manutenção do ciclo hidrológico local.',
+          content: 'O replantio de espécies nativas da Caatinga auxilia na manutenção do ciclo hidrológico local.',
           image: 'https://i.ibb.co/9nzGZs6/slide2-min.png',
         },
       ],

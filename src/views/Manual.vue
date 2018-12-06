@@ -1,15 +1,16 @@
 <template>
-  <GenericView title="Manual">
+  <GenericView title="Tutorial">
     <div class="content">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged.
-        It was popularised in the 1960s with the release of Letraset sheets containing.
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <Button label="PDF - Arduino"/>
-      <Button label="GitHub" @click.native="goLink('https://github.com/GrupoMandacaru')"/>
+      <p>Caso lhe interesse criar um protótipo, os links abaixo oferecem fontes
+         tanto para construção do hardware, quanto implementação do software.
+         Disponibilizamos um manual em PDF para o hardware e o repositório com os
+         códigos do projeto open-source no Github.
+        <br><br>
+         Obs: Caso nunca tenha trabalhado com arduino, não hesite em abrir o manual,
+         ele é um bom material de iniciação! =)
+      </p>
+      <Button label="Hardware" @click.native="goLink('https://drive.google.com/file/d/12-7uLcJP-VyHiSwyGIChJBFUjAL8xokz/view?usp=sharing')"/>
+      <Button label="Software" @click.native="goLink('https://github.com/GrupoMandacaru')"/>
     </div>
   </GenericView>
 </template>

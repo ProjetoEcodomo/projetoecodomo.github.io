@@ -4,30 +4,33 @@
     <b-card-group deck class="cards">
       <card title="Temperatura"
             :value="`${data.temperature_env}°C`"
-            img="https://i.ibb.co/TPWT3zK/thermometer.png"/>
+            :img="temp_icon"
+            v-if="data.temperature_env"/>
       <card title="Umidade"
             :value="`${data.humidity_env}%`"
-            img="https://i.ibb.co/N1mYZY1/humidity.png"/>
+            :img="humidity_icon"
+            v-if="data.humidity_env"/>
       <card title="Luminosidade"
             :value="`${data.luminosity}lm`"
-            img="https://i.ibb.co/LvVK5X6/luminosity.png"/>
+            :img="luminosity_icon"
+            v-if="data.luminosity"/>
     </b-card-group>
 
     <p class="label">Solo</p>
     <b-card-group deck class="cards">
-      <card title="Temperatura" :value="`${data.temperature_soil}°C`" img="https://i.ibb.co/TPWT3zK/thermometer.png"/>
+      <card title="Temperatura"
+            :value="`${data.temperature_soil}°C`"
+            :img="temp_icon"
+            v-if="data.temperature_soil"/>
       <card title="Umidade"
             :value="`${data.humidity_soil}%`"
-            img="https://i.ibb.co/N1mYZY1/humidity.png"/>
+            :img="humidity_icon"
+            v-if="data.humidity_soil"/>
     </b-card-group>
     <charts v-if="requestDone" :data="data"/>
     <div class="row">
-      <div class="col">
-        <charts v-if="requestDone" :data="data"/>
-      </div>
-      <div class="col">
-        <charts v-if="requestDone" :data="data"/>
-      </div>
+      <div class="col"><charts v-if="requestDone" :data="data"/> </div>
+      <div class="col"><charts v-if="requestDone" :data="data"/></div>
     </div>
   </div>
 </template>
@@ -41,6 +44,9 @@ export default {
     return {
       requestDone: false,
       data: {},
+      temp_icon: 'https://i.ibb.co/TPWT3zK/thermometer.png',
+      humidity_icon: 'https://i.ibb.co/N1mYZY1/humidity.png',
+      luminosity_icon: 'https://i.ibb.co/LvVK5X6/luminosity.png',
     };
   },
   components: {

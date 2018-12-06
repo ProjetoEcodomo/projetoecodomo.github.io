@@ -19,10 +19,12 @@
           SEMIÁRIDO
       </router-link>
       <router-link to="/sobre">
-        <img src="@/assets/info.png" class="icon">SOBRE
+        <img src="@/assets/info.png" class="icon">
+          SOBRE
       </router-link>
       <router-link to="/manual">
-        <img src="@/assets/book.png" class="icon">MANUAL
+        <img src="@/assets/book.png" class="icon">
+          TUTORIAL
       </router-link>
     </div>
   </div>
