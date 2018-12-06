@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .chart {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 </style>

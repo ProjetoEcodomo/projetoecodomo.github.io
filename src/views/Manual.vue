@@ -10,7 +10,7 @@
          ele é um bom material de iniciação! =)
       </p>
       <Button label="Hardware" @click.native="goLink('https://drive.google.com/file/d/12-7uLcJP-VyHiSwyGIChJBFUjAL8xokz/view?usp=sharing')"/>
-      <Button label="Software" @click.native="goLink('https://github.com/GrupoMandacaru')"/>
+      <Button label="Software" @click.native="goLink('https://github.com/ProjetoEcodomo')"/>
     </div>
   </GenericView>
 </template>

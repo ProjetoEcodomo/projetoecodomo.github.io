@@ -25,7 +25,7 @@ export default {
 }
 
 .card-img {
-  max-height: 8rem;
+    width: unset;
 }
 
 .card-img-overlay {

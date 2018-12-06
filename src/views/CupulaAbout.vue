@@ -4,7 +4,6 @@
       <h2>UMBU</h2>
       <p>{{description}}</p>
       <img src="https://www.destaquenoticias.com.br/wp-content/uploads/2016/12/umbu1-915x480.jpg" class="pics">
-      <img src="https://www.embrapa.br/bme_images/o/58280040o.jpg" class="pics"/>
     </div>
     <hr>
     <div class="contact">
@@ -64,9 +63,11 @@ hr {
 
 .content .pics  {
   position: relative;
-  width: 400px;
-  height: 250px;
-  margin: 0 30px;
+  width: 80% !important;
+  display: block;
+  margin: 0 auto;
   border-radius: 3px;
 }
+
+
 </style>

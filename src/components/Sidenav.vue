@@ -26,6 +26,9 @@
         <img src="@/assets/book.png" class="icon">
           TUTORIAL
       </router-link>
+      <p class="copyright">
+        Ecodomo- 2018<br>© Todos os direitos reservados.
+      </p>
     </div>
   </div>
 </template>
@@ -67,7 +70,6 @@
   text-align: left;
   transition: .5s;
   margin: 10% 0 0 10%;
-
 }
 
 .icon {
@@ -79,6 +81,13 @@
 .nav a:hover {
   color: black;
   transition: .5s;
+}
+
+.copyright {
+  color:#4b5c40;
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1005px) {
