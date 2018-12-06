@@ -77,12 +77,12 @@ export default {
         {
           title: 'Você sabia?',
           content: 'Entre 1980 e 2005, a temperatura máxima no estado Pernambuco subiu 3 graus Celsius.',
-          image: 'http://i66.tinypic.com/2lvlrgz.png',
+          image: 'https://i.ibb.co/hf4wh0V/banner2-min.png',
         },
         {
           title: 'Você sabia?',
           content: 'O replantio de espécies nativas da Caatinha auxilia na manutenção do ciclo hidrológico local.',
-          image: 'http://i63.tinypic.com/2ziuf10.png',
+          image: 'https://i.ibb.co/9nzGZs6/slide2-min.png',
         },
       ],
     };
