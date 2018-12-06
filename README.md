@@ -1,30 +1,11 @@
-# app
+# Projeto Ecodomo
 
-## Project setup
-```
-npm install
-```
+Em meio a situação climática e social do semiárido, surge o Projeto Ecolume - projeto de pesquisa baseado no modelo de economia circular com agricultura de baixo carbono, e que busca a sinergia entre as seguranças hídrica, energética e alimentar da região. Nas palavras de Francis Lacerda, coordenadora do projeto:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> “O conceito Ecolume visa apresentar provas materiais de que é possível plantar água, “comer Caatinga, e irrigá-la com o sol” 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+O projeto se baseia no modelo agro voltaico, e uma das ideias é a construção de cúpulas geodésicas com sistemas de captação de água da chuva, onde haverá o cultivo de mudas de espécies nativas da Caatinga, que deverão ser replantadas em seu habitat natural. A educação foi o meio escolhido pelo Ecolume para chegar nos agricultores, por isso as cúpulas serão construídas em escolas e universidades. O projeto hoje está em execução no Serviço de Tecnologia Alternativa (SERTA) de Ibimirim, lá os alunos são ensinados a trabalhar com esse sistema para que possam atuar na transformação das circunstâncias econômicas, sociais, ambientais, culturais e políticas, na promoção do desenvolvimento sustentável com foco no campo, disseminando esse conhecimento para suas famílias e toda a comunidade.
 
-### Run your tests
-```
-npm run test
-```
+Dentro desse contexto, o desafio proposto para o L.O.U.Co e sua equipe foi implementar IoT (Internet of Things) no projeto, para monitorar e compartilhar dados e indicadores. Nas primeiras semanas, nos adiantamos na definição do problema, que enunciamos da seguinte forma: “A falta de monitoramento acarreta a perda de dados vitais ao plantio”, no entanto, com um aprofundamento nas pesquisas, constatamos que estabelecer um sistema de monitoramento não é o desafio maior imediato, pois existe um viés educativo e a intenção de fazer uma sala de situação dentro do Instituto Agronômico de Pernambuco (IPA). Por conta disso, decidimos que iríamos desenvolver uma plataforma que fosse educativa e engajasse os jovens inseridos na realidade do semi-árido com o conceito Ecolume para solucionar o seguinte problema: “Como podemos fazer essa implementação com o foco em pessoas, de forma que eduque e engaje com o conceito Ecolume e ao mesmo tempo seja facilmente replicável?" Mas após estruturarmos o cronograma, constatamos que esse problema seria inviável de ser solucionado para o período de tempo e ferramentas disponíveis, então nós nos reunimos com as partes interessadas do projeto e alinhamos que nossa solução obteria dados e os exibiria em uma interface adequada a pesquisadores e pessoas interessadas em mudanças climáticas e/ou agricultura no semi-árido, deixando para o Ecolume executar a parte educativa utilizando esses dados coletados.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# interface # interface
+('https://i.ibb.co/ZWGwh6m/image.png')
