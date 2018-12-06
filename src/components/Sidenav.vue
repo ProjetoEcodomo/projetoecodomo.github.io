@@ -16,7 +16,7 @@
         <img src="@/assets/catus.png" class="icon">
           SEMIÁRIDO
       </router-link>
-      <router-link to="/">
+      <router-link to="/sobre">
         <img src="@/assets/info.png" class="icon">SOBRE
       </router-link>
       <router-link to="/manual">
