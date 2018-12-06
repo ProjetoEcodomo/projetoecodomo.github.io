@@ -74,20 +74,32 @@ export default {
 </script>
 
 <style>
-.content h2{
+.content h2 {
   color: #4B5C40;
   font-size: 30px;
 }
-.content h3{
+
+.content h3 {
   color: #4B5C40;
   font-size: 20px;
 }
-.content{
+
+.content {
   margin: 0px 30px;
 }
+
 .photo {
-  margin-bottom: 20px;
+  width: 80%;
+  display: block;
+  margin: 0 auto 20px;
 }
+
+iframe {
+  width: 80%;
+  display: block;
+  margin: 0 auto 60px;
+}
+
 @media screen and (max-width: 720px) {
   iframe {
     width: 250px;

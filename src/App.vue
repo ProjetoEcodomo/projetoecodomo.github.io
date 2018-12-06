@@ -25,8 +25,11 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-#app {
+* {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+#app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #5E6C54;

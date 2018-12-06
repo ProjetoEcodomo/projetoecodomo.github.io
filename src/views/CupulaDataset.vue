@@ -21,6 +21,14 @@
             img="https://i.ibb.co/N1mYZY1/humidity.png"/>
     </b-card-group>
     <charts v-if="requestDone" :data="data"/>
+    <div class="row">
+      <div class="col">
+        <charts v-if="requestDone" :data="data"/>
+      </div>
+      <div class="col">
+        <charts v-if="requestDone" :data="data"/>
+      </div>
+    </div>
   </div>
 </template>
 
